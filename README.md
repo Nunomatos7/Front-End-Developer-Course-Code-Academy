@@ -8,6 +8,7 @@ Main Sections:
 - Interview Prep
 
 Section|Exam Part 1|Exam Part 2|
+--|--|--
 Web Foundations|100%|100%|
 Improved Styling with CSS|||
 Building Interactive Websites|||
