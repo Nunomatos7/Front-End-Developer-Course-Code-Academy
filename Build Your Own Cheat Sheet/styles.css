@@ -1,0 +1,45 @@
+* {
+    font-family: Arial, sans-serif;
+    background-color: rgb(212, 177, 220);
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.subtitle h2 {
+    text-align: center;
+    color: rebeccapurple;
+}
+
+table {
+    margin: 0 auto;
+    border: 2px solid darkorchid;
+    width: 650px;    
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th {
+    text-align: left;
+    background-color: aqua;
+    font-weight: bold;
+    background-color: plum;
+    text-align: center;
+} 
+
+td {
+    text-align: left;
+    border-top: 1px solid darkorchid;
+    vertical-align: middle;
+
+}
+
+.code{
+    background-color: beige;
+    font-family: monospace;
+}
