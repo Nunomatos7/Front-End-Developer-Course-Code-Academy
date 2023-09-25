@@ -1,0 +1,123 @@
+body {
+    font-family: 'Helvetica';
+    font-size: 22px;
+    background-color: black;
+    opacity: 0.9;
+    color: seashell;
+    text-align: center;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid seashell;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+    background-image: url('images/img-tea-cozy-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.navigation {
+    margin-right: 10px;
+}
+
+.navigation a {
+    text-decoration: underline;
+    color: white;
+    margin-left: 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    text-decoration: underline;
+    color: white;
+}
+
+.mission-container {
+    background-image: url(./images/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 1000px;
+    margin: 40px auto;
+    display: flex;
+}
+
+.text-over {
+    margin: auto;
+    background-color: black;
+}
+
+.text-over2 {
+    margin: auto;
+    background-color: black;
+}
+
+.trend-container {
+    display: inline-flex;
+    max-width: 1000px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center ;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    padding: 10px 10px;
+}
+
+.banner-text {
+    padding-bottom: 15px;
+}
+
+.banner {
+    height: 500px;
+    max-width: 1200px;
+    margin: 40px auto auto auto;
+    padding-top: 85px;
+    background-image: url(./images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.box-container {
+    display: flex;
+    margin: 15px auto auto auto;
+    justify-content: space-between;
+    max-width: 1050px;
+}
+
+.box {
+    background-color: black;
+    opacity: 0.8;
+    flex-basis: 300px;
+    box-sizing: border-box;
+    margin-bottom: auto;
+}
+
+.last-part {
+    height: 200px;
+}
+
+footer h5 {
+    margin-left: 20px;
+    text-align: left;
+}
