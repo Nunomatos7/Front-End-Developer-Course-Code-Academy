@@ -1,4 +1,4 @@
-# Front-End-Developer-Course-Code-Academy:  
+# Front-End-Developer-Course-Codecademy:  
 https://www.codecademy.com/career-journey/front-end-engineer
 
 Main Sections:
@@ -12,7 +12,7 @@ Section|Exam Part 1|Exam Part 2|
 --|--|--
 Web Foundations|100%|100%|
 Improved Styling with CSS|100%|100%|
-Building Interactive Websites|||
+Building Interactive Websites|76%|75%|
 Front-End Development|||
 Interview Prep|||
 
