@@ -1,0 +1,39 @@
+/* Comments.css */
+
+.comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+.comment:hover {
+    background-color: #f9f9f9;
+    /* Add a gray shadow below the comment */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #991515;
+    cursor: pointer;
+  }
+  
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .comment-author {
+    font-weight: bold;
+    color: #0037ff;
+  }
+  
+  .comment-timestamp {
+    color: #666;
+  }
+  
+  .comment-body {
+    margin-top: 5px;
+  }
+  
+  .replies {
+    margin-left: 20px;
+  }
+  

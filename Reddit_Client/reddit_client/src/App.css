@@ -1,0 +1,22 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(220, 218, 218);
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex: 1;
+    margin: 20px 20px;
+  }
+  
+  .main-content {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  .subreddits {
+    flex: 1;
+    padding: 20px;
+  }
+  

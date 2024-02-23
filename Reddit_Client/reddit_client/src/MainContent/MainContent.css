@@ -1,0 +1,9 @@
+.main-content {
+    display: flex;
+    padding: 0px;
+    padding-right: 10px;
+  }
+
+.posts-column {
+  flex: 3;
+}
