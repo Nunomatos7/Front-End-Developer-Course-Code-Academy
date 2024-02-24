@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './MainContent.css';
 import Post from '../Post/Post.js';
 
@@ -26,10 +26,10 @@ function MainContent() {
             imageUrl="https://sc0.blr1.digitaloceanspaces.com/large/810804-njhiibbozi-1467125409.jpg"
             />
             <Post
-            title="OFICIAL: Messi paid to win Ballon d'Or 2023!"
+            title="Benfica wins UEFA Champions League 2024!"
             author="Author"
-            timestamp="5 hours ago"
-            commentsCount={1124}
+            timestamp="50 mins ago"
+            commentsCount={32453}
             imageUrl=""
             />
             {/* Add more posts as needed */}

@@ -6,9 +6,30 @@ import CommentsSection from '../Comments/Comments.js';
 
 function Post({ title, author, timestamp, commentsCount, imageUrl }) {
   const [showComments, setShowComments] = useState(false);
+  const [upvoted, setUpvoted] = useState(false);
+  const [downvoted, setDownvoted] = useState(false);
+  const [score, setScore] = useState(0); // Initial score value (example)
 
-  const toggleComments = () => {
-    setShowComments(!showComments);
+  const handleUpvote = () => {
+    if (upvoted) {
+      setScore(score - 1);
+      setUpvoted(false);
+    } else {
+      setScore(score + 1);
+      setUpvoted(true);
+      setDownvoted(false);
+    }
+  };
+
+  const handleDownvote = () => {
+    if (downvoted) {
+      setScore(score + 1);
+      setDownvoted(false);
+    } else {
+      setScore(score - 1);
+      setDownvoted(true);
+      setUpvoted(false);
+    }
   };
 
   // Simulated comments data
@@ -30,45 +51,20 @@ function Post({ title, author, timestamp, commentsCount, imageUrl }) {
     }
     // Add more simulated comments as needed
   ];
+  
 
-  const [upvoted, setUpvoted] = useState(false);
-  const [downvoted, setDownvoted] = useState(false);
-  const [score, setScore] = useState(0); // Initial score value (example)
-
-  const handleUpvote = () => {
-    if (upvoted) {
-      setScore(score - 1); // Decrease score if upvote is undone
-    } else {
-      setScore(score + 1); // Increase score if upvoted
-    }
-    setUpvoted(!upvoted); // Toggle upvoted state
-    setDownvoted(false); // Reset downvoted state
-  };
-
-  const handleDownvote = () => {
-    if (downvoted) {
-      setScore(score + 1); // Increase score if downvote is undone
-    } else {
-      setScore(score - 1); // Decrease score if downvoted
-    }
-    setDownvoted(!downvoted); // Toggle downvoted state
-    setUpvoted(false); // Reset upvoted state
-  };
 
   return (
     <div className="post">
       <div className="score-column">
-        {/* Score part */}
         <div className="score">
           <FaAngleDoubleUp
-            className={`vote-arrow upvote ${upvoted ? 'upvoted' : ''}`}
+            className={`vote-arrow ${upvoted ? 'upvoted' : ''}`}
             onClick={handleUpvote}
           />
-          <div className="score-value" style={{ color: upvoted ? 'green' : downvoted ? 'red' : 'black' }}>
-            {score}
-          </div>
+          <div className="score-value">{score}</div>
           <FaAngleDoubleDown
-            className={`vote-arrow downvote ${downvoted ? 'downvoted' : ''}`}
+            className={`vote-arrow ${downvoted ? 'downvoted' : ''}`}
             onClick={handleDownvote}
           />
         </div>
@@ -79,11 +75,10 @@ function Post({ title, author, timestamp, commentsCount, imageUrl }) {
         <div className="post-details">
           <span className="post-author">Posted by <span className='author'>{author}</span></span>
           <span className="post-timestamp">{timestamp}</span>
-          <span className="post-comments" onClick={toggleComments}>
+          <span className="post-comments" onClick={() => setShowComments(!showComments)}>
             <span className='icon'> <FaRegCommentAlt /> </span> {commentsCount}
           </span>
         </div>
-        {/* Comments section */}
         {showComments && <CommentsSection comments={simulatedComments} />}
       </div>
     </div>
