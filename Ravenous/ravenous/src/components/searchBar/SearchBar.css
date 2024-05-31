@@ -1,0 +1,78 @@
+.SearchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .SearchBar-sort-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  
+  .SearchBar-sort-options ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .SearchBar-sort-options li {
+    margin: 0 10px;
+    cursor: pointer;
+    /*highlight the options*/
+    color: #5a5235;
+    border: 1px solid #5a5235;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .SearchBar-sort-options .active {
+    font-weight: bold;
+  }
+
+
+  
+  .SearchBar-sort-options button.active {
+    background-color: #ff6666;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  
+  .SearchBar-fields {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .SearchBar-fields input {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .SearchBar-submit {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .SearchBar-submit button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5a5235;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .SearchBar-submit button:hover {
+    background-color: #665a2c;
+  }
+  

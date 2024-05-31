@@ -1,0 +1,40 @@
+.Business {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Business .image-container img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .Business h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .Business-information {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Business-address, .Business-reviews {
+    width: 45%;
+  }
+  
+  .Business-address p {
+    margin: 5px 0;
+  }
+  
+  .Business-reviews h3 {
+    margin: 5px 0;
+  }
+  
+  .Business-reviews .rating {
+    color: #ffd700;
+  }
+  

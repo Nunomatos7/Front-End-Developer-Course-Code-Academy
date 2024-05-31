@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #5a5235;
+}
+
+.SearchBarContainer {
+  background-image: url('../src/images/food.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  margin-bottom: 20px;
+}
